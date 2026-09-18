@@ -1,0 +1,64 @@
+{
+  "configuration_kind": "evaluation_protocol",
+  "backbones": [
+    "Fun-CosyVoice3-0.5B-2512",
+    "F5TTS_v1_Base",
+    "dots-studio/dots.tts-soar"
+  ],
+  "systems": [
+    "Native",
+    "EEC-adapted",
+    "CAE-adapted",
+    "CtrlSpeech-adapted",
+    "WordVoice-adapted",
+    "TRACE"
+  ],
+  "training_seeds": [
+    2703,
+    2704,
+    2705
+  ],
+  "speaker_prompts": "data/prompts.json",
+  "setting": "oracle",
+  "training_data": "Expresso read-emphasis",
+  "partitions": {
+    "train": "data/splits/expresso_train.json",
+    "dev": "data/splits/expresso_dev.json",
+    "test": "data/splits/expresso_test.json"
+  },
+  "train_groups": 68,
+  "train_endpoints": 206,
+  "dev_groups": 8,
+  "test_groups": 8,
+  "test_endpoints": 30,
+  "cast_pairs": 113,
+  "cast_endpoints": 226,
+  "metrics": [
+    "WhiStress Pair-Correct",
+    "WhiStress Pair-Contrast",
+    "emphases delta_P",
+    "Expresso RankAcc",
+    "UTMOS"
+  ],
+  "gain_selection": {
+    "split": "dev",
+    "objective": "RankAcc",
+    "tie_break": "smaller_gain",
+    "scope": "per_backbone",
+    "candidates_source": "runtime_configuration"
+  },
+  "trace_inference": {
+    "gain": "alpha",
+    "plan": "alpha * target_anchored_relaxation(predicted_plan)",
+    "residual": "alpha * valid_frame_mask * adapter",
+    "zero_gain": "native_timing_conditioning_and_waveform"
+  },
+  "aggregation": {
+    "within_seed": "mean over four prompts",
+    "across_seeds": "mean and sample SD, ddof=1"
+  },
+  "backbone_parameters_frozen": true,
+  "vocoder_parameters_frozen": true,
+  "evaluator_training_or_tuning": false,
+  "waveform_pitch_time_loudness_postprocessing": false
+}

@@ -1,0 +1,1302 @@
+[
+  {
+    "group_id": "TRACE_EXP_G001",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00089",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00090",
+        "focus_index": 2
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G002",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00133",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00134",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00135",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G003",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00082",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00083",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G004",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00116",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00117",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00118",
+        "focus_index": 5
+      },
+      {
+        "source_id": "ex03_default_emphasis_00119",
+        "focus_index": 6
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G005",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00016",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00017",
+        "focus_index": 4
+      },
+      {
+        "source_id": "ex03_default_emphasis_00018",
+        "focus_index": 8
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G006",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00101",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00102",
+        "focus_index": 5
+      },
+      {
+        "source_id": "ex03_default_emphasis_00103",
+        "focus_index": 7
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G008",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00085",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00086",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00087",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G010",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00056",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00057",
+        "focus_index": 7
+      },
+      {
+        "source_id": "ex03_default_emphasis_00058",
+        "focus_index": 10
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G014",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00038",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00039",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00040",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G015",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00023",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00024",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00025",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00026",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex03_default_emphasis_00027",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G016",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00121",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00123",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G018",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00074",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00076",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G020",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00096",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00097",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00098",
+        "focus_index": 2
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G021",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00011",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00012",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00013",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex03_default_emphasis_00014",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G022",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00128",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00129",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00130",
+        "focus_index": 4
+      },
+      {
+        "source_id": "ex03_default_emphasis_00131",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G023",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00105",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00106",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00107",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G025",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00143",
+        "focus_index": 6
+      },
+      {
+        "source_id": "ex03_default_emphasis_00144",
+        "focus_index": 5
+      },
+      {
+        "source_id": "ex03_default_emphasis_00145",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G028",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00067",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00068",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex03_default_emphasis_00069",
+        "focus_index": 6
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G029",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00052",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00053",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00054",
+        "focus_index": 7
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G030",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00002",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00003",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex03_default_emphasis_00004",
+        "focus_index": 6
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G032",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00060",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00061",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G033",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00125",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00126",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G035",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00034",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00035",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex03_default_emphasis_00036",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G036",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00113",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00114",
+        "focus_index": 2
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G041",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00078",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00079",
+        "focus_index": 5
+      },
+      {
+        "source_id": "ex03_default_emphasis_00080",
+        "focus_index": 7
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G042",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00137",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex03_default_emphasis_00138",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G045",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00109",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00110",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00111",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G046",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00092",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00093",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex03_default_emphasis_00094",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G047",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00147",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00148",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00149",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00150",
+        "focus_index": 4
+      },
+      {
+        "source_id": "ex03_default_emphasis_00151",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G048",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00042",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00043",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00044",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00045",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G049",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00063",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00064",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00065",
+        "focus_index": 2
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G050",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00020",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex03_default_emphasis_00021",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G051",
+    "split": "train",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00029",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00030",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00031",
+        "focus_index": 6
+      },
+      {
+        "source_id": "ex03_default_emphasis_00032",
+        "focus_index": 8
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G053",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00105",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00106",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G054",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00070",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00071",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00072",
+        "focus_index": 2
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G055",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00052",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00053",
+        "focus_index": 1
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G056",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00100",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00101",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex04_default_emphasis_00102",
+        "focus_index": 6
+      },
+      {
+        "source_id": "ex04_default_emphasis_00103",
+        "focus_index": 7
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G057",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00141",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00142",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00143",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00144",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G058",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00158",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00159",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00160",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G063",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00011",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00012",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00013",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G064",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00152",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00153",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00154",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00155",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex04_default_emphasis_00156",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G065",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00075",
+        "focus_index": 4
+      },
+      {
+        "source_id": "ex04_default_emphasis_00076",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G067",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00055",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00056",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00057",
+        "focus_index": 2
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G068",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00029",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00030",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00031",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00032",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex04_default_emphasis_00033",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G069",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00111",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00112",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex04_default_emphasis_00113",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G070",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00115",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00116",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00117",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G071",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00018",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00019",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G073",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00119",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex04_default_emphasis_00120",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G074",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00059",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00060",
+        "focus_index": 4
+      },
+      {
+        "source_id": "ex04_default_emphasis_00061",
+        "focus_index": 5
+      },
+      {
+        "source_id": "ex04_default_emphasis_00062",
+        "focus_index": 8
+      },
+      {
+        "source_id": "ex04_default_emphasis_00063",
+        "focus_index": 10
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G076",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00035",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00036",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00037",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex04_default_emphasis_00038",
+        "focus_index": 4
+      },
+      {
+        "source_id": "ex04_default_emphasis_00039",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G077",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00048",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00049",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00050",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G078",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00085",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00086",
+        "focus_index": 5
+      },
+      {
+        "source_id": "ex04_default_emphasis_00087",
+        "focus_index": 6
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G079",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00093",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex04_default_emphasis_00094",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G081",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00041",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00042",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00043",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G083",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00078",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00079",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00080",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G084",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00025",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00026",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00027",
+        "focus_index": 2
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G088",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00082",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00083",
+        "focus_index": 7
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G089",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00149",
+        "focus_index": 4
+      },
+      {
+        "source_id": "ex04_default_emphasis_00150",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G090",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00007",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00008",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex04_default_emphasis_00009",
+        "focus_index": 6
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G091",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00045",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00046",
+        "focus_index": 2
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G093",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00002",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00003",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00004",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G094",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00122",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00123",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00124",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00125",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G096",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00135",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00136",
+        "focus_index": 1
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G097",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00089",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00090",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex04_default_emphasis_00091",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G098",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00096",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex04_default_emphasis_00097",
+        "focus_index": 4
+      },
+      {
+        "source_id": "ex04_default_emphasis_00098",
+        "focus_index": 7
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G099",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00132",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00133",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G100",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00065",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00066",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00067",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00068",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G101",
+    "split": "train",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00127",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00128",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00129",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex04_default_emphasis_00130",
+        "focus_index": 4
+      }
+    ]
+  }
+]

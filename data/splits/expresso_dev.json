@@ -1,0 +1,182 @@
+[
+  {
+    "group_id": "TRACE_EXP_G012",
+    "split": "dev",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00168",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex03_default_emphasis_00169",
+        "focus_index": 4
+      },
+      {
+        "source_id": "ex03_default_emphasis_00170",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00171",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00172",
+        "focus_index": 0
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G017",
+    "split": "dev",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00157",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00158",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00159",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00160",
+        "focus_index": 3
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G037",
+    "split": "dev",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00162",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex03_default_emphasis_00163",
+        "focus_index": 4
+      },
+      {
+        "source_id": "ex03_default_emphasis_00164",
+        "focus_index": 6
+      },
+      {
+        "source_id": "ex03_default_emphasis_00165",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00166",
+        "focus_index": 1
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G038",
+    "split": "dev",
+    "speaker": "ex03",
+    "reference_endpoints": [
+      {
+        "source_id": "ex03_default_emphasis_00174",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex03_default_emphasis_00175",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex03_default_emphasis_00176",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex03_default_emphasis_00177",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G059",
+    "split": "dev",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00166",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00167",
+        "focus_index": 3
+      },
+      {
+        "source_id": "ex04_default_emphasis_00168",
+        "focus_index": 6
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G061",
+    "split": "dev",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00170",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00171",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00172",
+        "focus_index": 4
+      },
+      {
+        "source_id": "ex04_default_emphasis_00173",
+        "focus_index": 5
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G086",
+    "split": "dev",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00179",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00180",
+        "focus_index": 2
+      },
+      {
+        "source_id": "ex04_default_emphasis_00181",
+        "focus_index": 4
+      }
+    ]
+  },
+  {
+    "group_id": "TRACE_EXP_G095",
+    "split": "dev",
+    "speaker": "ex04",
+    "reference_endpoints": [
+      {
+        "source_id": "ex04_default_emphasis_00175",
+        "focus_index": 0
+      },
+      {
+        "source_id": "ex04_default_emphasis_00176",
+        "focus_index": 1
+      },
+      {
+        "source_id": "ex04_default_emphasis_00177",
+        "focus_index": 2
+      }
+    ]
+  }
+]

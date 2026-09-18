@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TRACE runtime model configuration",
+  "type": "object",
+  "properties": {
+    "planner": {
+      "type": "object",
+      "properties": {
+        "native_dim": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "speaker_dim": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "layers": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "heads": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "feedforward_dim": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "dropout": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMaximum": 1
+        },
+        "position_base": {
+          "type": "number",
+          "exclusiveMinimum": 1
+        },
+        "activation": {
+          "enum": [
+            "gelu",
+            "relu",
+            "silu"
+          ]
+        },
+        "norm_first": {
+          "type": "boolean"
+        },
+        "norm_eps": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "native_dim",
+        "speaker_dim",
+        "width",
+        "layers",
+        "heads",
+        "feedforward_dim",
+        "dropout",
+        "position_base",
+        "activation",
+        "norm_first",
+        "norm_eps"
+      ],
+      "additionalProperties": false
+    },
+    "adapter": {
+      "type": "object",
+      "properties": {
+        "state_dim": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "native_dim": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "speaker_dim": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "layers": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "kernel_size": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "dropout": {
+          "type": "number",
+          "minimum": 0,
+          "exclusiveMaximum": 1
+        },
+        "activation": {
+          "enum": [
+            "gelu",
+            "relu",
+            "silu"
+          ]
+        },
+        "norm_eps": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "state_dim",
+        "native_dim",
+        "speaker_dim",
+        "width",
+        "layers",
+        "kernel_size",
+        "dropout",
+        "activation",
+        "norm_eps"
+      ],
+      "additionalProperties": false
+    },
+    "global_relaxation": {
+      "type": "object",
+      "properties": {
+        "lambda_r": {
+          "type": "number",
+          "minimum": 0
+        },
+        "tau_b": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "lambda_r",
+        "tau_b"
+      ],
+      "additionalProperties": false
+    },
+    "loss": {
+      "type": "object",
+      "properties": {
+        "lambda_missing": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "huber_delta": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "lambda_swap": {
+          "type": "number",
+          "minimum": 0
+        },
+        "swap_margin": {
+          "type": "number",
+          "minimum": 0
+        },
+        "gamma": {
+          "type": "number",
+          "minimum": 0
+        },
+        "lambda_cf": {
+          "type": "number",
+          "minimum": 0
+        },
+        "lambda_p": {
+          "type": "number",
+          "minimum": 0
+        },
+        "margin": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "cosine_epsilon": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "lambda_missing",
+        "huber_delta",
+        "lambda_swap",
+        "swap_margin",
+        "gamma",
+        "lambda_cf",
+        "lambda_p",
+        "margin",
+        "cosine_epsilon"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "planner",
+    "adapter",
+    "global_relaxation",
+    "loss"
+  ],
+  "additionalProperties": true
+}

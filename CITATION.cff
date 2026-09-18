@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Anonymous review copy. Author attribution will be restored after review."
+title: "TRACE: Target-Relative Acoustic Contrast Encoding for Prosodic Stress Control in Text-to-Speech"
+type: software
+version: 0.2.0
+authors:
+  - name: "Anonymous Authors"
+license: MIT

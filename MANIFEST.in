@@ -1,0 +1,8 @@
+include README.md CITATION.cff LICENSE THIRD_PARTY_NOTICES.md .gitignore
+recursive-include licenses *
+recursive-include docs *.md *.bib *.json
+recursive-include configs *.json
+recursive-include data *.json
+recursive-include scripts *.py
+recursive-include tests *.py
+global-exclude __pycache__ *.py[cod]

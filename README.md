@@ -1,0 +1,83 @@
+# TRACE: Target-Relative Acoustic Contrast Encoding
+
+Reusable source for target-relative word-level stress control in text-to-speech.
+TRACE learns from matched renditions with shared text and speaker identity but
+different stress targets. A relational planner, target-anchored global relaxation,
+and command-gated residual adapter act on a frozen acoustic generator.
+
+This anonymous source distribution contains the core algorithms, networks,
+prepared-input training interfaces, acoustic preparation, evaluation functions,
+and data identifiers. Host TTS implementations, pretrained assets, and
+backbone-specific bindings are supplied separately. The three host families are
+CosyVoice3, F5-TTS, and dots.tts-soar; the control comparisons are shared-backbone
+adaptations rather than reproductions of the original authors' complete systems.
+
+## Installation
+
+Use Python 3.10-3.12 and install a matching PyTorch/torchaudio build for the host
+platform. From the source directory:
+
+```bash
+python -m pip install -e .
+python -m pip install -e '.[audio]'
+python -m pip install -e '.[prominence]'
+```
+
+The audio and prominence extras are needed only by their respective interfaces.
+Use the selected upstream TTS environment for host model loading and generation.
+Installation does not download model weights. See [assets](docs/ASSETS.md) for
+upstream sources.
+
+Keep the source tree for the commands below: a wheel installs the `trace_tts`
+modules and license notices, while `scripts/`, `configs/`, `data/`, and `docs/`
+belong to the source distribution.
+
+## Method modules
+
+| Module | Responsibility |
+|---|---|
+| `trace_core.py` | Relative coordinates, masked target projection, prominence ordering, acoustic commands, and centered residual targets |
+| `trace_networks.py` | Transformer relational planner and temporal residual backbone |
+| `global_relaxation.py` | Boundary-weighted global smoothing with zero centering, target anchoring, and prominence constraints |
+| `signed_refinement.py` | Same-state ordered-pair signed residual objective |
+| `inference.py` | Relaxed plan, shared control gain, flow correction, and exact native bypass |
+| `backend_contract.py` | Native state, timing transport, frozen velocity, integration, and decoding interface |
+| `trace_audio_features.py`, `trace_phone_clock.py` | Acoustic descriptors, support masks, TRAIN-only scaling, and phoneme-aligned transport |
+| `control_embeddings.py`, `cae_reference.py` | Adapted conditioning and activation-editing primitives |
+| `metrics.py` | Five metric definitions and prompt/seed aggregation |
+
+## Use
+
+```bash
+python scripts/check_splits.py
+python scripts/train_planner.py --help
+python scripts/score.py --help
+```
+
+[Training](docs/TRAINING.md) defines the complete-group input schema and the
+planner, adapter-fitting, and refinement entry points.
+[Core interfaces](docs/CORE_INTERFACES.md) describes the host operations needed
+by shared TRACE inference. [Evaluation](docs/EVALUATION.md) defines the input
+observations and metric aggregation. [Adaptations](docs/ADAPTATIONS.md) describes
+the control-module scope and ablation interfaces.
+
+`configs/model_example.json` is a configuration schema. Supply concrete model
+dimensions and optimization settings in a separate runtime configuration.
+`configs/protocol.json` records the system matrix, data partitions, and evaluation
+conventions. These files contain no measured scores.
+
+## Software tests
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+Tests use artificial tensors and interval fixtures. They do not download models,
+train TTS systems, or generate speech.
+
+## License and citation
+
+Project-authored code is under MIT. Third-party-derived portions retain their
+notices in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and `licenses/`.
+Model weights and datasets have independent terms. `CITATION.cff` provides the
+anonymous software citation; upstream references are in `docs/REFERENCES.bib`.

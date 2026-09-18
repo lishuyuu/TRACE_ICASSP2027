@@ -1,0 +1,30 @@
+[
+  {
+    "id": "heldout_lower_01_libri1272",
+    "speaker_id": "external_lower_01",
+    "text": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his gospel.",
+    "source_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/audio/1272-128104-0000.flac",
+    "local_audio": "data/prompts/prompt_1.wav"
+  },
+  {
+    "id": "heldout_lower_02_asr",
+    "speaker_id": "external_lower_02",
+    "text": "Oh, yeah, yeah. He wasn't even that big when I started listening to him, but, and his solo music.",
+    "source_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-ASR-Repo/asr_en.wav",
+    "local_audio": "data/prompts/prompt_2.wav"
+  },
+  {
+    "id": "heldout_higher_01_guess",
+    "speaker_id": "external_higher_01",
+    "text": "I heard that you can understand what people say and even tell their age and gender. So can you guess my age and gender from my voice?",
+    "source_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/audio/guess_age_gender.wav",
+    "local_audio": "data/prompts/prompt_3.wav"
+  },
+  {
+    "id": "heldout_higher_02_exam",
+    "speaker_id": "external_higher_02",
+    "text": "I have an exam coming up, but I'm not well prepared. I can't sleep well every night.",
+    "source_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-Audio/demo/1718857224593-3efbd24f-f7f8-4f10-abba-24df5d92210b.wav",
+    "local_audio": "data/prompts/prompt_4.wav"
+  }
+]

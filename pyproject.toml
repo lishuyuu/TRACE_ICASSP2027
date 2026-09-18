@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trace-tts-core"
+version = "0.2.0"
+description = "Target-relative acoustic contrast: reusable method source"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "licenses/*"]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<2", "scipy>=1.10", "torch>=2.3,<3"]
+
+[project.optional-dependencies]
+audio = ["soundfile>=0.12", "pyworld>=0.3", "librosa>=0.10", "torchaudio>=2.3,<3"]
+prominence = ["emphases==0.0.2", "soundfile>=0.12", "librosa>=0.10", "torchaudio>=2.3,<3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
