@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "trace-tts-core"
 version = "0.2.0"
-description = "Target-relative acoustic contrast: reusable method source"
+description = "Target-relative acoustic contrast encoding for prosodic stress control in text-to-speech"
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "licenses/*"]
