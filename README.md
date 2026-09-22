@@ -1,16 +1,10 @@
 # TRACE: Target-Relative Acoustic Contrast Encoding
 
-Reusable source for target-relative word-level stress control in text-to-speech.
-TRACE learns from matched renditions with shared text and speaker identity but
-different stress targets. A relational planner, target-anchored global relaxation,
-and command-gated residual adapter act on a frozen acoustic generator.
+This repository contains the implementation of TRACE, a framework for controllable word-level prosodic stress in text-to-speech (TTS).
 
-This anonymous source distribution contains the core algorithms, networks,
-prepared-input training interfaces, acoustic preparation, evaluation functions,
-and data identifiers. Host TTS implementations, pretrained assets, and
-backbone-specific bindings are supplied separately. The three host families are
-CosyVoice3, F5-TTS, and dots.tts-soar; the control comparisons are shared-backbone
-adaptations rather than reproductions of the original authors' complete systems.
+Current TTS systems can produce natural and expressive speech, but explicitly specifying a stress target does not always lead to reliable prominence realization. TRACE addresses this gap by modeling stress as a target-relative prosodic configuration rather than a set of absolute acoustic values for the target word. It learns from matched renditions with the same text and speaker but different stress targets, capturing how pitch, energy, and duration are reorganized across the utterance.
+
+TRACE combines an ordered relational prosody planner, target-anchored global relaxation, and a command-gated residual adapter on top of a frozen TTS backbone. At inference time, only the selected stress target is required, without paired reference speech. Across CosyVoice3, F5-TTS, and dots.tts-soar, TRACE consistently improves bidirectional stress switching on the CAST benchmark while maintaining competitive predicted naturalness.
 
 ## Installation
 
