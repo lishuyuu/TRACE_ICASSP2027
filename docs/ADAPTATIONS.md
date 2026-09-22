@@ -1,7 +1,5 @@
 # Control adaptations and ablations
 
-The comparison matrix contains Native, EEC-adapted, CAE-adapted,
-CtrlSpeech-adapted, WordVoice-adapted, and TRACE on each selected host.
 The comparison includes Native, EEC, CAE, CtrlSpeech, WordVoice, and TRACE. All control methods are integrated with the same frozen host backbones and evaluated under the same data and evaluation protocol.
 
 ## Control interfaces
