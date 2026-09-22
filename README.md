@@ -64,18 +64,17 @@ conventions.
 
 The TRACE experiments reported in the paper use the following hyperparameters for target-relative projection, global prosody relaxation, command sensitivity, and signed counterfactual refinement.
 
-| Parameter | Value | Description |
-|---|---:|---|
-| $\lambda_u$ | 0.25 | Regularization weight for unobserved coordinates in the target-relative projection objective. |
-| $\lambda_r$ | 2.0 | Smoothing strength in the target-anchored global prosody relaxation. |
-| $\tau_b$ | 0.7 | Boundary attenuation coefficient that controls how prosodic boundary strength reduces smoothing across adjacent words. |
-| $\lambda_s$ | 0.5 | Weight of the command-sensitivity margin loss used to encourage target-dependent command responses. |
-| $\gamma$ | 2.0 | Time-weighting exponent in the command-sensitivity loss. |
-| $\mu$ | 0.25 | Margin used in the command-sensitivity objective. |
-| $\lambda_p$ | 1.0 | Weight of the magnitude/projection penalty in signed refinement. |
-| $\lambda_{cf}$ | 0.5 | Weight of the counterfactual signed-refinement objective. |
-| $m$ | 1.0 | Projection margin used in signed refinement. |
-
+| Parameter | Runtime key | Value | Description |
+|---|---|---:|---|
+| $\lambda_u$ | `lambda_missing` | 0.25 | Regularization weight for unobserved coordinates in the target-relative projection objective. |
+| $\lambda_r$ | `lambda_r` | 2.0 | Smoothing strength in the target-anchored global prosody relaxation. |
+| $\tau_b$ | `tau_b` | 0.7 | Boundary attenuation coefficient controlling how prosodic boundaries reduce smoothing across adjacent words. |
+| $\lambda_s$ | `lambda_swap` | 0.5 | Weight of the command-sensitivity margin loss. |
+| $\gamma$ | `gamma` | 2.0 | Time-weighting exponent in the command-sensitivity loss. |
+| $\mu$ | `swap_margin` | 0.25 | Margin used in the command-sensitivity objective. |
+| $\lambda_p$ | `lambda_p` | 1.0 | Weight of the signed projection penalty in counterfactual refinement. |
+| $\lambda_{cf}$ | `lambda_cf` | 0.5 | Weight of the counterfactual refinement term. |
+| $m$ | `margin` | 1.0 | Projection margin used in signed refinement. |
 These settings correspond to the reported experiments unless otherwise specified by an ablation or runtime configuration.
 
 ## Software tests
@@ -91,5 +90,4 @@ train TTS systems, or generate speech.
 
 Project-authored code is under MIT. Third-party-derived portions retain their
 notices in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and `licenses/`.
-Model weights and datasets have independent terms. `CITATION.cff` provides the
-anonymous software citation; upstream references are in `docs/REFERENCES.bib`.
+Model weights and datasets have independent terms. `CITATION.cff` provides the software citation; upstream references are in `docs/REFERENCES.bib`. Upstream references are in `docs/REFERENCES.bib`.
