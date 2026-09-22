@@ -32,7 +32,7 @@ Native is the unmodified target-free reference path.
 `configs/ablations.json` contains the four component variants:
 
 - w/o target-relative contrast
-- w/o context centering
+- w/o group centering
 - w/o prominence ordering
 - target-local only
 
@@ -42,5 +42,5 @@ same data access, host, and evaluation interface.
 
 For the no-ordering path, remove the target-order constraint from supervision,
 planner parameterization, and global relaxation. For target-local control, restrict the acoustic
-control to the requested word. The target-relative-contrast and context-centering
+control to the requested word. The target-relative-contrast and  group-centering
 variant identifiers are connected through explicitly supplied variant bindings.
