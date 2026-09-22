@@ -4,7 +4,7 @@ This repository contains the implementation of TRACE, a framework for controllab
 
 Current TTS systems can produce natural and expressive speech, but explicitly specifying a stress target does not always lead to reliable prominence realization. TRACE addresses this gap by modeling stress as a target-relative prosodic configuration rather than a set of absolute acoustic values for the target word. It learns from matched renditions with the same text and speaker but different stress targets, capturing how pitch, energy, and duration are reorganized across the utterance.
 
-TRACE combines an ordered relational prosody planner, target-anchored global relaxation, and a command-gated residual adapter on top of a frozen TTS backbone. At inference time, only the selected stress target is required, without paired reference speech. Across CosyVoice3, F5-TTS, and dots.tts-soar, TRACE consistently improves bidirectional stress switching on the CAST benchmark while maintaining competitive predicted naturalness.
+TRACE combines an ordered relational prosody planner, target-anchored global relaxation, and a command-gated residual adapter on top of a frozen TTS backbone. At inference time, TRACE uses the native TTS state and the selected stress target, without requiring paired reference speech. Under oracle target specification, TRACE consistently improves bidirectional stress switching across CosyVoice3, F5-TTS, and dots.tts-soar on the CAST benchmark while maintaining competitive predicted naturalness.
 
 ## Installation
 
