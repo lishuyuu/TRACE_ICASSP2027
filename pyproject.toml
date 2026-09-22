@@ -9,7 +9,7 @@ description = "Target-relative acoustic contrast: reusable method source"
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "licenses/*"]
-requires-python = ">=3.10"
+requires-python = ">=3.10,<3.13"
 dependencies = ["numpy>=1.24,<2", "scipy>=1.10", "torch>=2.3,<3"]
 
 [project.optional-dependencies]
