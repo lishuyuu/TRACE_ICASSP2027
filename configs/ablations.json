@@ -1,7 +1,7 @@
 {
   "full": {"label": "Full TRACE"},
   "no_target_relative_contrast": {"label": "w/o target-relative contrast"},
-"no_context_centering": {"label": "w/o group centering"}
+  "no_context_centering": {"label": "w/o group centering"},
   "no_ordering": {"label": "w/o prominence ordering"},
   "target_local": {"label": "target-local only"}
 }
