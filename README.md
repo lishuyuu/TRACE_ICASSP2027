@@ -75,6 +75,7 @@ The TRACE experiments reported in the paper use the following hyperparameters fo
 | $\lambda_p$ | `lambda_p` | 1.0 | Weight of the signed projection penalty in counterfactual refinement. |
 | $\lambda_{cf}$ | `lambda_cf` | 0.5 | Weight of the counterfactual refinement term. |
 | $m$ | `margin` | 1.0 | Projection margin used in signed refinement. |
+
 These settings correspond to the reported experiments unless otherwise specified by an ablation or runtime configuration.
 
 ## Software tests
@@ -90,4 +91,4 @@ train TTS systems, or generate speech.
 
 Project-authored code is under MIT. Third-party-derived portions retain their
 notices in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and `licenses/`.
-Model weights and datasets have independent terms. `CITATION.cff` provides the software citation; upstream references are in `docs/REFERENCES.bib`. Upstream references are in `docs/REFERENCES.bib`.
+Model weights and datasets have independent terms. `CITATION.cff` provides the software citation; upstream references are in `docs/REFERENCES.bib`.
