@@ -58,7 +58,7 @@ the control-module scope and ablation interfaces.
 `configs/model_example.json` is a configuration schema. Supply concrete model
 dimensions and optimization settings in a separate runtime configuration.
 `configs/protocol.json` records the system matrix, data partitions, and evaluation
-conventions. These files contain no measured scores.
+conventions. 
 
 ## Hyperparameters
 
