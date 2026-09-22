@@ -2,9 +2,7 @@
 
 The comparison matrix contains Native, EEC-adapted, CAE-adapted,
 CtrlSpeech-adapted, WordVoice-adapted, and TRACE on each selected host.
-Adapted controls share the host's native acoustic representation and frozen
-decoder. Their names identify the source mechanisms, not complete original
-author systems.
+The comparison includes Native, EEC, CAE, CtrlSpeech, WordVoice, and TRACE. All control methods are integrated with the same frozen host backbones and evaluated under the same data and evaluation protocol.
 
 ## Control interfaces
 
