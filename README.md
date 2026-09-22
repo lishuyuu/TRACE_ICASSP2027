@@ -1,4 +1,4 @@
-# TRACE: Target-Relative Acoustic Contrast Encoding
+# TRACE: Target-Relative Acoustic Contrast Encoding for Prosodic Stress Control in Text-to-Speech
 
 This repository contains the implementation of TRACE, a framework for controllable word-level prosodic stress in text-to-speech (TTS).
 
