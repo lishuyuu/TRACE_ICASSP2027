@@ -63,7 +63,7 @@ footer {
 
 .hero {
   max-width: 900px;
-  padding: 94px 0 84px;
+  padding: 94px 0 64px;
 }
 
 .eyebrow {
@@ -417,7 +417,7 @@ footer {
 
 @media (max-width: 820px) {
   .hero {
-    padding: 68px 0 58px;
+    padding: 68px 0 48px;
   }
 
   .target-grid,
