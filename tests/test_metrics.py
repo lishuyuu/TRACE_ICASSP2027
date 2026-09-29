@@ -35,8 +35,8 @@ class MetricTests(unittest.TestCase):
 
     def test_prompt_then_seed_sample_sd(self):
         prompts = ['a', 'b', 'c', 'd']
-        cells = {(s, p): float(s - 2702) for s in (2703, 2704, 2705) for p in prompts}
-        self.assertEqual(aggregate_seeds(cells, prompts=prompts), {'mean': 2.0, 'sample_sd': 1.0})
+        cells = {(s, p): float(s - 2702) for s in (2703, 2704, 2705, 2706, 2707) for p in prompts}
+        self.assertEqual(aggregate_seeds(cells, prompts=prompts), {'mean': 3.0, 'sample_sd': 2.5 ** 0.5})
 
     def test_dev_gain_tie(self):
         self.assertEqual(select_gain({1.0: 25, 1.5: 25}, candidates=[1.0, 1.5], split='dev'), 1.0)
@@ -56,9 +56,9 @@ class MetricTests(unittest.TestCase):
 
     def test_repeated_seed_not_counted_as_independent(self):
         prompts = ['a', 'b', 'c', 'd']
-        cells = {(s, p): 1.0 for s in (2703, 2704) for p in prompts}
-        with self.assertRaisesRegex(ValueError, 'Three distinct'):
-            aggregate_seeds(cells, prompts=prompts, seeds=(2703, 2703, 2704))
+        cells = {(s, p): 1.0 for s in (2703, 2704, 2705, 2706) for p in prompts}
+        with self.assertRaisesRegex(ValueError, 'Five distinct'):
+            aggregate_seeds(cells, prompts=prompts, seeds=(2703, 2703, 2704, 2705, 2706))
 
     def test_nonfinite_mean_and_invalid_strings(self):
         self.assertIsNone(complete_mean([1.0, float('nan')]))
