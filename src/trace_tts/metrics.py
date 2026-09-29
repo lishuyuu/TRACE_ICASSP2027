@@ -75,9 +75,9 @@ def aggregate_cell(cast_pairs, expresso_endpoints, utmos_endpoints, *, expected_
         return None if value is None else 100 * value
     return {'Pair-Correct': percent((r['pair_correct'] for r in cast_pairs)), 'Pair-Contrast': percent((r[k] for r in cast_pairs for k in ('contrast_a', 'contrast_b'))), 'delta_P': complete_mean((r['delta_P'] for r in cast_pairs)), 'RankAcc': percent(expresso_endpoints), 'UTMOS': complete_mean(utmos_endpoints)}
 
-def aggregate_seeds(cells, *, seeds=(2703, 2704, 2705), prompts):
-    if len(seeds) != 3 or any((type(s) is not int for s in seeds)) or len(set(seeds)) != 3:
-        raise ValueError('Three distinct integer training seeds required')
+def aggregate_seeds(cells, *, seeds=(2703, 2704, 2705, 2706, 2707), prompts):
+    if len(seeds) != 5 or any((type(s) is not int for s in seeds)) or len(set(seeds)) != 5:
+        raise ValueError('Five distinct integer training seeds required')
     if len(prompts) != 4 or len(set(prompts)) != 4:
         raise ValueError('Four distinct fixed prompts required')
     expected = {(s, p) for s in seeds for p in prompts}
