@@ -1,5 +1,8 @@
 # Audio files
 
+The current WAV files are temporary audio previews. Replace them with the
+experimental outputs before using the page as a listening demo.
+
 Place the eight listening samples in this directory using the filenames below.
 The demo page detects each file automatically and replaces its pending label
 with an audio player.
