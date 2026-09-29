@@ -38,7 +38,7 @@ def main():
     p = argparse.ArgumentParser(description='Train a relational planner from complete TRAIN groups')
     p.add_argument('--groups', type=Path, required=True)
     p.add_argument('--config', type=Path, required=True)
-    p.add_argument('--seed', type=int, choices=[2703, 2704, 2705], required=True)
+    p.add_argument('--seed', type=int, choices=[2703, 2704, 2705, 2706, 2707], required=True)
     p.add_argument('--steps', type=int, required=True)
     p.add_argument('--lr', type=float, required=True)
     p.add_argument('--weight-decay', type=float, required=True)
