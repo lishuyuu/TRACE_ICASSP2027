@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Listening examples for TRACE, a target-relative approach to word-level prosodic stress control in text-to-speech."
+    />
+    <title>TRACE — Audio Samples</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../">TRACE</a>
+      <a class="repo-link" href="https://github.com/lishuyuu/TRACE_ICASSP2027">Code repository</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Listening demo</p>
+        <h1>Target-relative prosodic stress control</h1>
+        <p class="lead">
+          The examples below use the same sentence, speaker prompt, and generation seed within each comparison.
+          Only the requested stress target or control method changes.
+        </p>
+        <div class="sentence" aria-label="Example sentence">
+          She defended the <span>moral</span> <span>theory</span> in the seminar.
+        </div>
+      </section>
+
+      <section class="demo-section" aria-labelledby="main-comparison">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Main comparison</p>
+            <h2 id="main-comparison">Bidirectional stress switching</h2>
+          </div>
+          <p>CosyVoice3 · WordVoice and TRACE</p>
+        </div>
+
+        <div class="target-grid">
+          <article class="target-panel">
+            <div class="target-heading">
+              <span class="target-label">Target</span>
+              <h3>MORAL</h3>
+            </div>
+            <p class="utterance">She defended the <strong>MORAL</strong> theory in the seminar.</p>
+            <div class="sample-list">
+              <div class="sample" data-audio="audio/cv3_wordvoice_moral.wav">
+                <span class="method">WordVoice</span>
+                <span class="audio-slot" role="status">Audio pending</span>
+              </div>
+              <div class="sample trace" data-audio="audio/cv3_trace_moral.wav">
+                <span class="method">TRACE</span>
+                <span class="audio-slot" role="status">Audio pending</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="target-panel">
+            <div class="target-heading">
+              <span class="target-label">Target</span>
+              <h3>THEORY</h3>
+            </div>
+            <p class="utterance">She defended the moral <strong>THEORY</strong> in the seminar.</p>
+            <div class="sample-list">
+              <div class="sample" data-audio="audio/cv3_wordvoice_theory.wav">
+                <span class="method">WordVoice</span>
+                <span class="audio-slot" role="status">Audio pending</span>
+              </div>
+              <div class="sample trace" data-audio="audio/cv3_trace_theory.wav">
+                <span class="method">TRACE</span>
+                <span class="audio-slot" role="status">Audio pending</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="demo-section" aria-labelledby="backbone-comparison">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Across backbones</p>
+            <h2 id="backbone-comparison">TRACE on three TTS systems</h2>
+          </div>
+          <p>The same target pair is used throughout.</p>
+        </div>
+
+        <div class="backbone-list">
+          <article class="backbone-row">
+            <div class="backbone-name">
+              <h3>CosyVoice3</h3>
+              <span>TRACE</span>
+            </div>
+            <div class="sample compact" data-audio="audio/cv3_trace_moral.wav">
+              <span class="method"><strong>MORAL</strong> target</span>
+              <span class="audio-slot" role="status">Audio pending</span>
+            </div>
+            <div class="sample compact" data-audio="audio/cv3_trace_theory.wav">
+              <span class="method"><strong>THEORY</strong> target</span>
+              <span class="audio-slot" role="status">Audio pending</span>
+            </div>
+          </article>
+
+          <article class="backbone-row">
+            <div class="backbone-name">
+              <h3>F5-TTS</h3>
+              <span>TRACE</span>
+            </div>
+            <div class="sample compact" data-audio="audio/f5_trace_moral.wav">
+              <span class="method"><strong>MORAL</strong> target</span>
+              <span class="audio-slot" role="status">Audio pending</span>
+            </div>
+            <div class="sample compact" data-audio="audio/f5_trace_theory.wav">
+              <span class="method"><strong>THEORY</strong> target</span>
+              <span class="audio-slot" role="status">Audio pending</span>
+            </div>
+          </article>
+
+          <article class="backbone-row">
+            <div class="backbone-name">
+              <h3>dots.tts-soar</h3>
+              <span>TRACE</span>
+            </div>
+            <div class="sample compact" data-audio="audio/dots_trace_moral.wav">
+              <span class="method"><strong>MORAL</strong> target</span>
+              <span class="audio-slot" role="status">Audio pending</span>
+            </div>
+            <div class="sample compact" data-audio="audio/dots_trace_theory.wav">
+              <span class="method"><strong>THEORY</strong> target</span>
+              <span class="audio-slot" role="status">Audio pending</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="protocol">
+        <h2>Listening protocol</h2>
+        <p>
+          Stress targets are provided explicitly. Samples are published directly from the corresponding systems,
+          without pitch, duration, or loudness post-processing.
+        </p>
+      </aside>
+    </main>
+
+    <footer>
+      <span>TRACE</span>
+      <span>Target-Relative Acoustic Contrast Encoding</span>
+    </footer>
+
+    <script>
+      const samples = document.querySelectorAll("[data-audio]");
+
+      samples.forEach(async (sample) => {
+        const source = sample.dataset.audio;
+        const slot = sample.querySelector(".audio-slot");
+
+        try {
+          const response = await fetch(source, { method: "HEAD" });
+          if (!response.ok) return;
+
+          const player = document.createElement("audio");
+          player.controls = true;
+          player.preload = "metadata";
+          player.src = source;
+          player.setAttribute("aria-label", `${sample.querySelector(".method").textContent.trim()} audio sample`);
+          slot.replaceWith(player);
+          sample.classList.add("ready");
+        } catch (_) {
+          // Keep the pending label until the corresponding file is published.
+        }
+      });
+    </script>
+  </body>
+</html>
