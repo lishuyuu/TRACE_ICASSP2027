@@ -100,6 +100,18 @@ h1 {
   line-height: 1.7;
 }
 
+.test-notice {
+  max-width: 730px;
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border: 1px solid #dfbd86;
+  border-radius: 8px;
+  background: #fff5e5;
+  color: #6d4a18;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
 .sentence {
   display: inline-flex;
   flex-wrap: wrap;
