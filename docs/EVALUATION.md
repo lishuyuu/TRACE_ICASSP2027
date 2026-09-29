@@ -90,7 +90,7 @@ non-finite observations leave the affected metric `null`; complete observations
 are not silently reweighted to a smaller denominator.
 
 `metrics.aggregate_seeds` first averages the four prompts within each seed, then
-computes the mean and sample standard deviation across three distinct training
+computes the mean and sample standard deviation across five distinct training
 seeds. Generation seeds do not replace independently trained seeds.
 
 ## Development gain
