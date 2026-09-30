@@ -6,9 +6,11 @@ from pathlib import Path
 import torch
 from trace_tts.trace_networks import RelationalPlanner, observed_huber_loss
 
+
 def validate_settings(steps, lr, weight_decay, huber_delta):
     if type(steps) is not int or steps < 1 or any((isinstance(v, bool) or not math.isfinite(v) for v in (lr, weight_decay, huber_delta))) or (lr <= 0) or (weight_decay < 0) or (huber_delta <= 0):
         raise ValueError('Training settings must be finite; steps/lr/delta positive and decay nonnegative')
+
 
 def validate_groups(groups, model):
     if not isinstance(groups, list) or not groups:
@@ -34,11 +36,12 @@ def validate_groups(groups, model):
                 raise ValueError(f'Group {index}: oracle shape/device/dtype differs from planner')
             observed_huber_loss(oracle, oracle, group['observed'], valid, delta=1.0)
 
+
 def main():
     p = argparse.ArgumentParser(description='Train a relational planner from complete TRAIN groups')
     p.add_argument('--groups', type=Path, required=True)
     p.add_argument('--config', type=Path, required=True)
-    p.add_argument('--seed', type=int, choices=[2703, 2704, 2705, 2706, 2707], required=True)
+    p.add_argument('--seed', type=int, required=True)
     p.add_argument('--steps', type=int, required=True)
     p.add_argument('--lr', type=float, required=True)
     p.add_argument('--weight-decay', type=float, required=True)
