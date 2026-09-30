@@ -17,6 +17,7 @@ dist/
 *.safetensors
 *.onnx
 *.wav
+!docs/demo/audio/*.wav
 *.flac
 *.mp3
 *.npy
