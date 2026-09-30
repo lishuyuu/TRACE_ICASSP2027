@@ -1,7 +1,9 @@
 # Attribution and scope of licensing
 
+
 Project-authored TRACE source is under the root MIT license. This does not
 relicense third-party implementations, datasets or pretrained weights.
+
 
 - `control_embeddings.py::CtrlSpeechPhoneEmbedding` adapts the control embedding
   mechanism referenced from `zszheng147/ctrlspeech`, local source revision
@@ -16,5 +18,5 @@ relicense third-party implementations, datasets or pretrained weights.
 - F5, CosyVoice3, dots.tts, WhiStress and UTMOS model code/weights are obtained
   separately. Refer to their licenses in the downloaded distributions.
 
+
 The package intentionally keeps method-source names and limitations explicit.
-Review institutional/coauthor ownership authorization before public publication.
