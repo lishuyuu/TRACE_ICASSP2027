@@ -34,7 +34,11 @@ weights is `exp(-tau_b * boundary_strengths)`.
 | `decode` | Convert the integrated acoustic state through the frozen native decoder/vocoder |
 
 Implement these operations against the chosen upstream host and pass that object
-to `inference.generate_trace`. Model-name strings in the protocol identify host
+to `inference.generate_trace`. `trace_tts.cosyvoice3_binding.CosyVoice3Backend` provides the CosyVoice3
+contract wrapper. Its `CosyVoice3Runtime` must still be implemented for the
+selected upstream revision: CosyVoice3's public inference API returns completed
+waveforms and does not expose the native word alignment, flow field, or sampling
+hooks that TRACE needs. Model-name strings in the protocol identify host
 assets; they do not instantiate bindings or download weights.
 
 ## Shared generation
