@@ -21,6 +21,7 @@
     2707
   ],
   "speaker_prompts": "data/prompts.json",
+  "speaker_count": 4,
   "setting": "oracle",
   "training_data": "Expresso read-emphasis",
   "partitions": {
