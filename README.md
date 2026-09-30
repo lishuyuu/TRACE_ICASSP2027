@@ -53,7 +53,9 @@ python scripts/score.py --help
 [Training](docs/TRAINING.md) defines the complete-group input schema and the
 planner, adapter-fitting, and refinement entry points.
 [Core interfaces](docs/CORE_INTERFACES.md) describes the host operations needed
-by shared TRACE inference. [Evaluation](docs/EVALUATION.md) defines the input
+by shared TRACE inference and the CosyVoice3 contract wrapper. Its revision-
+specific runtime hooks must be implemented against the selected upstream model
+internals. [Evaluation](docs/EVALUATION.md) defines the input
 observations and metric aggregation. [Adaptations](docs/ADAPTATIONS.md) describes
 the control-module scope and ablation interfaces.
 
