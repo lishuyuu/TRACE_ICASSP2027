@@ -4,7 +4,7 @@ This repository contains the implementation of TRACE, a framework for controllab
 
 Current TTS systems can produce natural and expressive speech, but explicitly specifying a stress target does not always lead to reliable prominence realization. TRACE addresses this gap by modeling stress as a target-relative prosodic configuration rather than a set of absolute acoustic values for the target word. It learns from matched renditions with the same text and speaker but different stress targets, capturing how pitch, energy, and duration are reorganized across the utterance.
 
-TRACE combines an ordered relational prosody planner, target-anchored global relaxation, and a command-gated residual adapter on top of a frozen TTS backbone. At inference time, TRACE uses the native TTS state and the selected stress target, without requiring paired reference speech. Under oracle target specification, TRACE consistently improves bidirectional stress switching across CosyVoice3, F5-TTS, and dots.tts-soar on the CAST benchmark while maintaining competitive predicted naturalness.
+TRACE combines an ordered relational prosody planner, target-anchored global relaxation, and a command-gated residual adapter on top of a frozen TTS backbone. At inference time, TRACE uses the native TTS state and the selected stress target, without requiring paired reference speech. Under oracle target specification, TRACE improves CAST Pair-Correct and Pair-Contrast across CosyVoice3, F5-TTS, and dots.tts-soar while retaining comparable UTMOS predictions.
 
 ## Audio samples
 
@@ -54,7 +54,7 @@ https://github.com/user-attachments/assets/63057578-14f41618-1b0f-4692-8fa8-a8c0
 
 CosyVoice3 · WordVoice and TRACE
 
-BLUE / VASE, DOCTOR / FAMILY, and FRIDAY / MORNING are illustrative examples for listening. They are separate from the quantitative evaluation results.
+Additional illustrative listening examples: BLUE / VASE, DOCTOR / FAMILY, and FRIDAY / MORNING.
 
 #### Pair 01: BLUE / VASE — Local contrast
 
@@ -229,9 +229,8 @@ Use the selected upstream TTS environment for host model loading and generation.
 Installation does not download model weights. See [assets](docs/ASSETS.md) for
 upstream sources.
 
-Keep the source tree for the commands below: a wheel installs the `trace_tts`
-modules and license notices, while `scripts/`, `configs/`, `data/`, and `docs/`
-belong to the source distribution.
+See [installation and packaging notes](docs/INSTALLATION.md) for
+source-distribution details.
 
 ## Method modules
 
@@ -293,8 +292,8 @@ These settings correspond to the reported experiments unless otherwise specified
 python -m unittest discover -s tests -v
 ```
 
-Tests use artificial tensors and interval fixtures. They do not download models,
-train TTS systems, or generate speech.
+The unit tests cover tensor operations, metric aggregation, and
+interval-processing utilities.
 
 ## License and citation
 

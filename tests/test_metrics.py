@@ -117,4 +117,4 @@ class MetricTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             switching_outcomes([row])
 if __name__ == '__main__':
-    unittest.main(
+    unittest.main()

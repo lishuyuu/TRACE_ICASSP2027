@@ -1,6 +1,6 @@
 include README.md CITATION.cff LICENSE THIRD_PARTY_NOTICES.md .gitignore
 recursive-include licenses *
-recursive-include docs *.md *.bib *.json
+recursive-include docs *.md *.bib *.json *.html *.css *.wav
 recursive-include configs *.json
 recursive-include data *.json
 recursive-include scripts *.py
